@@ -11,6 +11,11 @@ defmodule Challenges.CodeWars.Mumbling do
   The parameter of accum is a string which includes only letters from a..z and A..Z.
   """
   def accum(s) do
-    # your code
+    s
+    |> String.codepoints()
+    |> Enum.with_index()
+    |> Enum.map(fn {l, i} -> String.duplicate(l, i + 1) end)
+    |> Enum.map(&String.capitalize(&1))
+    |> Enum.join("-")
   end
 end
