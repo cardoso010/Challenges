@@ -1,5 +1,7 @@
 # Challenges
 
+[![Build Status](https://github.com/cardoso010/challenges/workflows/TEST/badge.svg?branch=main)](https://github.com/cardoso010/challenges/actions)
+
 Challenges to learn new stuffs and training my skills.
 
 ## Installation
